@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #005f5f;
+}
+
+.nav a.current {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+
+.content {
+    width: 750px;
+    height: 700px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    text-align: center;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 750px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.error {
+    color: darkred;
+}
+
+.success {
+    color: darkgreen;
+}
+
+.timeline {
+
+}
+
+.message {
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.message a {
+    text-decoration: none;
+}
+
+.message p {
+    font-size: small;
+    font-style: italic;
+    display: inline;
+}
+
+.newMessage p {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+
+.newMessage p textarea {
+    width: 100%;
+}
+
+.newMessage p input[type=submit] {
+    float: right;
+    margin-right: -5px;
+}
+
+.users a, .following a {
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 3px;
+    display: inline-block;
+    min-width: 80px;
+    margin-top: 1px;
+}
+
+.following a {
+    border: 1px solid green;
+    color: green;
+}
+
+.following a.verified {
+    background: green;
+    color: white;
+}
+
+.users a{
+    border: 1px solid #005f5f;
+    color: #005f5f;
+}
+
+.users a.verified {
+    background: #005f5f;
+    color: white;
+}
+
+.timeTable {
+    float: left;
+    border-right: 1px solid black;
+    width: 50%;
+}
+
+.placesTable {
+    float: right;
+    width: 50%;
+}
+
+.topTen {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.topTen th, .topTen td {
+    border: 1px solid;
+}
+
+a{
+    text-decoration: none;
+    color: #005f5f;
+}
+
+p.verified {
+    color: green;
+    display: inline;
+}
